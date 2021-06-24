@@ -1,6 +1,5 @@
 CXX := nvcc
 CXXFLAGS := -O3 -std=c++17
-CXXFLAGS += -I ..
 CXXFLAGS += -x cu
 CXXFLAGS += -extended-lambda
 

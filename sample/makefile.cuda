@@ -1,0 +1,10 @@
+CXX := nvcc
+CXXFLAGS := -O3 -std=c++17
+CXXFLAGS += -I ..
+CXXFLAGS += -x cu
+CXXFLAGS += -extended-lambda
+
+CXXFLAGS += -D USE_NVCC
+
+all:
+	$(CXX) $(CXXFLAGS) -o run sample.cpp 
